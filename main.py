@@ -30,8 +30,8 @@ video_update_args.add_argument("likes", type=int, help="Likes of the videos")
 
 resource_fields = {
 	'id': fields.Integer,
-	'name': fields.String,
-	'views': fields.Integer,
+	'name': fields.String,							# "fields" & "marshal_with" to serialize the return value.
+	'views': fields.Integer,						# if the type of return value was Dict, there is no needed to serialize.
 	'likes': fields.Integer
 }
 
